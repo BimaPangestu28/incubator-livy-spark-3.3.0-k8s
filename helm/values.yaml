@@ -63,12 +63,20 @@ pvc:
   storageClass: ""
   storageSize: 2Gi
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e6d51e67c7ca5518d2bbc02a13a9086d6e2a8e8a
 security:
   https: false
 
 env:
   - name: SPARK_CONF_spark_kubernetes_container_image
+<<<<<<< HEAD
     value: bimapangestu/livy-spark-k8s:latest
+=======
+    value: armadik/livy-spark:dev
+>>>>>>> e6d51e67c7ca5518d2bbc02a13a9086d6e2a8e8a
   - name: SPARK_CONF_spark_kubernetes_container_image_pullPolicy
     value: Always
   - name: SPARK_CONF_spark_kubernetes_container_image_pullSecrets
@@ -91,4 +99,8 @@ ingress:
     - host: localhost
       paths:
         - path: /
+<<<<<<< HEAD
           pathType: ImplementationSpecific
+=======
+          pathType: ImplementationSpecific
+>>>>>>> e6d51e67c7ca5518d2bbc02a13a9086d6e2a8e8a

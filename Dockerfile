@@ -63,9 +63,9 @@ RUN mkdir livy/jars/ && \
     mv /workspace/rsc/target/jars/* livy/rsc-jars/  && \
     mkdir livy/logs/ && \
     mkdir spark-resources && \
-    mv /workspace/spark/* spark-resources/ \
+    mv /workspace/spark/resources/* spark-resources/ \
     mkdir spark-apps && \
-    mv /workspace/spark/* spark-apps/
+    mv /workspace/spark/apps/* spark-apps/
 
 RUN tar -czvf /tmp/livy33-k8s.tar.gz livy
 
